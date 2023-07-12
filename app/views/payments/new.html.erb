@@ -1,0 +1,35 @@
+<nav class = "vw-100 d-flex justify-content-around align-items-center btn-blue-col">
+<%= link_to category_path(params[:category_id]) do %>
+<div class = "arrow">
+  <i class="fas fa-arrow-left btn-blue-col"></i>
+  </div>
+ <% end %>
+ <div class = "heading">
+ <h2>Add Transaction</h2>
+ </div>
+ <%if user_signed_in?%>
+    <div>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn-blue-col text-decoration-none border border-0' %>
+    </div>
+    <%end%>
+ </nav>
+
+ 
+<section class="container-md">
+  <%= form_with model: @payment, url: category_payments_path(params[:category_id]), method: :post, local: true do |form| %>
+          <%= form.label :category_id, "Select Category", class:"form-label mt-3" %>
+      <%= form.select :category_id, current_user.categories.all.map { |category| [category.name, category.id] }, {}, class: "form-control" %>
+    
+ 
+      <%= form.label :name, class:"form-label mt-3" %>
+      <%= form.text_field :name, class: "form-control" %>
+    
+      <%= form.label :amount, class:"form-label mt-3" %>
+      <%= form.number_field :amount, class: "form-control" %>
+    
+      <%= form.submit "Add", class: "btn btn-success btn-lg fixed-bottom container-md" %>
+   
+  <% end %>
+
+</section>
+

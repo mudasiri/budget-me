@@ -1,0 +1,44 @@
+<nav class = "vw-100 d-flex justify-content-around align-items-center btn-blue-col">
+<%= link_to root_path do %>
+<div class = "arrow">
+ 
+  </div>
+ <% end %>
+ <div class = "heading">
+ <h2>Categories</h2>
+ </div>
+ <%if user_signed_in?%>
+    <div>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn-blue-col text-decoration-none border border-0' %>
+    </div>
+    <%end%>
+ </nav>
+<h1 class = "vw-100 mt-2" style="text-align: center;"><%="Welcome #{current_user.name}"%></h1>
+<section class="vw-100 container-md d-flex flex-column justify-content-between align-items-center">
+
+<%if @categories.size%>
+ <ul class="container-fluid m-0 p-0" > 
+<% @categories.each do |category| %>
+  <li class="d-flex justify-content-between align-items-center bg-white p-2 mb-3">
+  <div>
+   <%= image_tag(category.icon, class: "img-fluid", style: "width: 50px; height: 50px;" )%>
+   <%= link_to category.name, category_path(category.id), class: "text-bold" %>
+      </div>
+      <span> $<%=category.payments.sum(:amount)%> </span>
+        <% if current_user.present? && can?(:destroy, category) %>
+        <%= button_to "Remove", category_path(category.id), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger btn-sm ml-2' %>
+      <% end %>
+        </li>
+<% end %>
+ </ul>
+<%else%>
+<p>Please add some Categories first</p>
+ <%end%>
+  <button class="container-md btn btn-primary btn-blue-col btn-lg fixed-bottom">
+    <%= link_to 'Add Category', new_category_path, class: "text-decoration-none text-white" %>
+  </button>
+ 
+</div>
+</section>
+
+

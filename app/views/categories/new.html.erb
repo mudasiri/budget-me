@@ -1,0 +1,34 @@
+ <nav class = "vw-100 d-flex justify-content-around align-items-center btn-blue-col">
+<%= link_to categories_path do %>
+<div class = "arrow">
+  <i class="fas fa-arrow-left btn-blue-col"></i>
+  </div>
+ <% end %>
+ <div class = "heading">
+ <h2>Add Category</h2>
+ </div>
+ <%if user_signed_in?%>
+    <div>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn-blue-col text-decoration-none border border-0' %>
+    </div>
+    <%end%>
+ </nav>
+
+ 
+<section class="container-md">
+<%= form_with model: @category do |form| %>
+
+<%= form.label :name, class:"form-label mt-3" %>
+  <%= form.text_field :name, class:"form-control" %>
+  
+  
+  <%= form.label :icon, class:"form-label mt-3" %>
+   <%= form.file_field :icon, class:"form-control", id: "category_icon" %>
+    
+  <button class = "submit">
+  <%= form.submit "Create", class: 'container-md btn btn-success btn-lg fixed-bottom' %>
+  </button>
+ <% end %>
+
+</section>
+
