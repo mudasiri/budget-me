@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>Expensify App - Track your Expenses</b></h3>
+  <h3><b>Budgetimi App - Tracking Made Easy</b></h3>
 
 </div>
 
@@ -26,10 +26,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Budget App] <a name="is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool."></a>
+# 📖 [Budgetimi App] <a name="is a web app that helps users record, manage and track their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool."></a>
 
 
-**[Budget App]** is based on Ruby Language and Rails framework.
+**[Budgetimi App]** is built with Ruby Language and Rails framework.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,22 +59,15 @@
 ### Key Features <a name="key-features"></a>
 
 - **[User Authentication]**
-- **[Create Category for Payments]**
-- **[Add Transactions to those Categories]**
+- **[Ability to Create Category for Payments]**
+- **[Add Transactions based on Categories]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo](https://expensify-ta0p.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📺 Presentation <a name="presentation"></a>
-
-- [Link to video presentation](https://www.loom.com/share/2330bf21ad8941ecb56ecb7ddf5c07a6?sid=c4fc0db1-ab05-497e-b0db-a0bec44db1d7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +75,7 @@
 
 To get a local copy up and running, follow these steps.
 
-- clone this https://github.com/dheerajsachdeva/budget.git
+- clone this https://github.com/mudasiri/budget-me.git
 
 
 ### Prerequisites
@@ -100,7 +93,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 <ul>
 <li>cd my-folder</li>
-<li>git clone https://github.com/dheerajsachdeva/budget.git</li>
+<li>git clone https://github.com/mudasiri/budget-me.git</li>
 </ul>
 
 ### Install
@@ -125,13 +118,13 @@ Run: rspec to run tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-👤 **DHEERAJ SACHDEVA**
+👤 **Mudasir Issah**
 
-- GitHub: [@githubhandle](https://github.com/dheerajsachdeva)
-- Twitter: [@twitterhandle](https://twitter.com/dheerajarya)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dheeraj-sachdeva-502b2b8/)
+- GitHub: [@githubhandle](https://github.com/mudasiri)
+- Twitter: [@twitterhandle](https://twitter.com/MudasirIssah)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mudasiri/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +141,7 @@ Run: rspec to run tests
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [repo](https://github.com/dheerajsachdeva/budget.git) 
+Feel free to check the [repo](https://github.com/mudasiri/budget-me.git) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,9 +159,9 @@ I would like to thank Microverse and and [Gregoire Vella](https://www.behance.ne
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[What is Budget App?]**
+- **[What is Budgetimi App?]**
 
-  - [Budget app is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.]
+  - [Budgetimi is a web app that helps users record, manage and track their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool..]
 
   - **Is Rails still relevant?**
 
