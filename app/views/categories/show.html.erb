@@ -5,7 +5,7 @@
   </div>
  <% end %>
  <div class = "heading">
- <h2>Transactions</h2>
+ <h2>Expenses</h2>
  </div>
  <%if user_signed_in?%>
     <div>
@@ -25,5 +25,5 @@
 <%end%>
 </ul>
 
-    <%= link_to 'Add Transaction', new_category_payment_path(params[:id]), class: "container-md btn btn-primary btn-blue-col btn-lg fixed-bottom" %>
+    <%= link_to 'Add Expense', new_category_payment_path(params[:id]), class: "container-md btn btn-primary btn-blue-col btn-lg fixed-bottom" %>
   </section>
