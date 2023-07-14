@@ -27,11 +27,11 @@ RSpec.describe 'Categories', type: :feature do
     end
 
     it 'renders a button to add transaction' do
-      expect(page).to have_content('Add Transaction')
+      expect(page).to have_content('Add Expense')
     end
 
     it 'redirects to a form for new transaction' do
-      click_link 'Add Transaction'
+      click_link 'Add Expense'
       expect(page).to have_current_path(new_category_payment_path(@category.id))
     end
   end
